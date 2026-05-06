@@ -31,7 +31,7 @@ body{
 }
 
 @media screen and ( max-width:585px){
-    #desktop{
+    .desktops{
         display: none;
     }
     .container{
@@ -44,7 +44,7 @@ body{
         background-color: var(--White);
         border-radius: 10px;
     }
-    #mobile{
+    .mobiles{
         width: 327px;
         height: auto;
         border-top-left-radius: 10px;
@@ -115,7 +115,7 @@ body{
 
 /* Desktop Display screen */
 @media screen and (min-width: 55.375rem){
-    #mobile{
+    .mobiles{
         display: none;
     }
     .mobile{
@@ -137,7 +137,7 @@ body{
         justify-content: center;
         gap: 30px;
     }
-    #desktop{
+    .desktops{
         width: 250px;
         height: auto;
         box-sizing: border-box;
