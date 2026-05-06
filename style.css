@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    /* Primary color */
+    --Green-500: hsl(158, 36%, 37%);
+    --Green-700: hsl(158, 42%, 18%);
+
+    /* Neutral color */
+    --Black: hsl(212, 21%, 14%);
+    --Grey: hsl(228, 12%, 48%);
+    --Cream: hsl(30, 38%, 92%);
+    --White: hsl(0, 0%, 100%);
+
+    /* Font weight */
+
+    --Primary-font: "Montserrat", sans-serif;
+    --Secondray-font: "Fraunces", serif;
+    --Montserrat-small: 500px;
+    --Montserrat-large: 700px;
+    --Fraunces-large: 700px;
+}
+
+body{
+    background-color: var(--Cream);
+    margin: 0;
+    padding: 0;
+    font-family: "Fraunces", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+@media screen and ( max-width:585px){
+    #desktop{
+        display: none;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+        width: 327px;
+        height: auto;
+        box-sizing: border-box;
+        background-color: var(--White);
+        border-radius: 10px;
+    }
+    #mobile{
+        width: 327px;
+        height: auto;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        box-sizing: border-box;
+        
+    }
+    .product_details{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .desktop{
+        display: none;
+    }
+    .product-description {
+        text-align: left;
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        color: var(--Grey);
+    }
+    h2{
+        line-height: 1.8rem;
+    }
+    h4{
+        padding:0;
+        font-family: "Montserrat", sans-serif;;
+        color: var(--Grey);
+    }
+    .product{
+        color: var(--Grey);
+        padding: 0;
+    }
+    .price{
+        font-weight:bolder;
+        font-size: 30px;
+        color: var(--Green-500);
+        font-family: "Fraunces", serif;
+    }
+    .line-throught{
+        text-decoration: line-through;
+        color: var(--Grey);
+        font-weight: semi-bold;
+        font-size: 14px;
+        font-family: "Montserrat", sans-serif;
+    }
+    .price-tag{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        padding: 10px 0;
+    }
+    button{
+        padding: 10px 90px;
+        border-radius: 10px;
+        border: 1px solid var(--Green-700);
+        background-color: var(--Green-700);
+        color: var(--White);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Desktop Display screen */
+@media screen and (min-width: 886px){
+    #mobile{
+        display: none;
+    }
+    .mobile{
+        display: none;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        width: 534px;
+        height: 370px;
+        align-items: center;
+        overflow: hidden;
+        box-sizing: border-box;
+        background-color: var(--White);
+        border-radius: 10px;
+    }
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+    #desktop{
+        width: 250px;
+        height: auto;
+        box-sizing: border-box;
+    }
+    .product-description {
+        text-align: left;
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        color: var(--Grey);
+    }
+    h2{
+        line-height: 1.8rem;
+    }
+    h4{
+        padding:0;
+        font-family: "Montserrat", sans-serif;;
+        color: var(--Grey);
+    }
+    .product{
+        color: var(--Grey);
+        padding: 0;
+    }
+
+    .price{
+        font-weight:bolder;
+        font-size: 30px;
+        color: var(--Green-500);
+        font-family: "Fraunces", serif;
+    }
+    .line-throught{
+        text-decoration: line-through;
+        color: var(--Grey);
+        font-weight: semi-bold;
+        font-size: 14px;
+        font-family: "Montserrat", sans-serif;
+    }
+    .price-tag{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        padding: 10px 0;
+    }
+    button{
+        padding: 10px 70px;
+        border-radius: 10px;
+        border: 1px solid var(--Green-700);
+        background-color: var(--Green-700);
+        color: var(--White);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+    }
+    button:hover{
+        border: 1px solid var(--Green-500);
+        background-color: var(--Green-500);
+    }
+
+}
